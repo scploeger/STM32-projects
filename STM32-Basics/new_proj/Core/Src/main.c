@@ -92,7 +92,7 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  char msg[] = "Hello World\n";
+  char msg[] = "Hello World\n"; //set message to print to terminal
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -124,7 +124,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_UART_Transmit(&huart3, (const uint8_t*) msg, strlen(msg), TIMEOUT);
+    HAL_UART_Transmit(&huart3, (const uint8_t*) msg, strlen(msg), TIMEOUT); // print message to terminal
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
