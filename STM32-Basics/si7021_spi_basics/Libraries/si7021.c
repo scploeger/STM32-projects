@@ -128,7 +128,7 @@ int32_t si7021_measure_temperature(I2C_HandleTypeDef *hi2c)
   if (res != HAL_OK) {
     return SI7021_MEASURE_FAILED;
   }
-  HAL_Delay(30);
+  HAL_Delay(40);
 
   return _read_and_convert_temperature(hi2c);
 }
